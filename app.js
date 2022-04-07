@@ -23,6 +23,8 @@ display()
 
 
 // ##########################################
+
+
 var st = require("./student");
 
 st.studentname
@@ -45,10 +47,10 @@ fs.readFile("info.txt",function(err,data){
 var http = require("http");
 var url = require("url");
 
-
 var myhttp = http.createServer(function(request,response){
     var querystring = url.parse(request.url,true).query;
     console.log(querystring);
+
 
     response.writeHead(200);
     response.write("welcome");
